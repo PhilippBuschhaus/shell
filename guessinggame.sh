@@ -1,6 +1,5 @@
 #function to check number of files as veriable
 numberOfFiles=$(ls | wc -l)
-answerIsFalse=1
 
 #echo $numberOfFiles
 echo 'How many files do you think are in this directory?'
@@ -20,19 +19,20 @@ read response
         else
             echo 'too high'
         fi
-
-    #Try again
     echo 'Try again'
-    read response
+
  else
     echo 'this was right'
-    echo $answerIsFalse
-    let answerIsFalse=0
+    
  fi
  }
 
+#check response for the first time
+checkResponse
+
 #run function as long as answer is wrong
- while [ $answerIsFalse ]
- do 
- checkResponse
- done
+while [ $response -ne $numberOfFiles ]
+do
+read response
+checkResponse
+done
