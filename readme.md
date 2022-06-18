@@ -1,5 +1,6 @@
 # Peer-graded Assignment: Bash, Make, Git, and GitHub
 
-1. Date when make was run:
-
-2. Number of lines of code in the game:
+Date when make was run:
+Sa 18 Jun 2022 23:45:34 CEST
+Number of lines of code in the game:
+37
