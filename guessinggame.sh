@@ -20,9 +20,9 @@ read response
             echo 'too high'
         fi
     echo 'Try again'
-    
+
  else
-    echo 'this was right'
+    echo 'this was right - congrats!!'
     
  fi
  }
